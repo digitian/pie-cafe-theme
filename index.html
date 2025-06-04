@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Dev: Pie Cafe</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Import css: Owl Carousel-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Import css: Wow & Animate -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Modals -->
+  <div class="modal top fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true"
+    data-mdb-backdrop="false" data-mdb-keyboard="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-7">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel">Leave a Review</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Full name input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" id="name" class="form-control" />
+            <label class="form-label" for="name">Full name</label>
+          </div>
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline">
+            <input type="email" id="email" class="form-control" />
+            <label class="form-label" for="email">Email address</label>
+          </div>
+          <div class="form-text mb-4" id="email">
+            We'll never share your email with anyone else.
+          </div>
+
+          <!-- Message input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <textarea class="form-control" id="message" rows="4" data-mdb-showcounter="true" maxlength="120"></textarea>
+            <label class="form-label" for="message">Message</label>
+            <div class="form-helper"></div>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex align-items-start">
+            <input class="form-check-input me-2" type="checkbox" value="" id="terms" checked />
+            <label class="form-check-label" for="terms">
+              I have read and agree to the <a href="#">terms</a>.
+            </label>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-rounded btn-secondary" data-mdb-dismiss="modal">
+            Cancel
+          </button>
+          <button type="submit" class="btn btn-rounded btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals-->
+
+  <!-- Header -->
+  <header>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pie Cafe</a>
+
+        <!-- Toggler button-->
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Toggler button-->
+
+        <!-- Navbar elements -->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+
+            <li class="nav-item me-2">
+              <a class="nav-link" href="#">Meet Our Team</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu </a>
+            </li>
+
+          </ul>
+        </div>
+        <!-- Navbar elements -->
+
+      </div>
+
+    </nav>
+    <!-- Navigation bar -->
+
+    <!-- Section: Welcome screen-->
+    <section>
+
+      <div class="vh-100"
+        style="background-image: url('img/pizza-bg.webp'); background-size: cover; background-position: center;">
+
+        <!-- Container -->
+        <div class="container h-100 wow fadeInUp">
+          <div class="row h-100 align-items-center">
+
+            <div class="col-md-6 d-flex flex-column align-items-center">
+
+              <!-- Brand logo -->
+              <img src="img/logo.png" alt="Pie cafe logo" class="img-fluid" style="max-width: 250px;">
+
+              <div class="text-dark text-center mt-4">
+                <h3 class="h4 text-uppercase fw-bold">We're Open!</h3>
+                <span>Coffe, Pizza, Subs, Chicken, Salads and Pies</span>
+              </div>
+
+              <button class="btn btn-lg btn-rounded btn-success mt-5" data-mdb-ripple-init><i class="fas fa-cart-shopping me-2"></i>Order Online</button>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- Container -->
+
+      </div>
+
+    </section>
+    <!-- Section: Welcome screen-->
+
+  </header>
+  <!-- Header -->
+
+  <!-- Main content -->
+  <main class="mt-5">
+
+    <!-- Section: Reviews -->
+    <section class="mb-10">
+
+      <!-- Container-->
+      <div class="container">
+
+        <!-- Owl carousel -->
+        <div class="owl-carousel owl-theme">
+
+          <!-- First item -->
+          <div class="item">
+            <div class="review-card">
+
+              <!-- Review owner details -->
+              <div class="d-flex align-items-center">
+
+                <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Review owner picture"
+                  class="review-profile-img">
+
+                <div class="lh-1 ms-2">
+                  <div class="fw-bold">Mark Miles</div>
+                  <small class="text-muted">Customer</small>
+                </div>
+
+              </div>
+
+              <!-- Comment text -->
+              <div class="review-text text-muted mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus velit eius placeat eum
+                laboriosam incidunt odit laudantium quibusdam sapiente cupiditate est, blanditiis inventore rerum quas
+                excepturi voluptatum similique? Atque.
+              </div>
+
+            </div>
+          </div>
+          <!-- First item -->
+
+          <!-- Second item -->
+          <div class="item">
+            <div class="review-card">
+
+              <!-- Review owner details -->
+              <div class="d-flex align-items-center">
+
+                <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Review owner picture"
+                  class="review-profile-img">
+
+                <div class="lh-1 ms-2">
+                  <div class="fw-bold">Maggie Wilson</div>
+                  <small class="text-muted">Customer</small>
+                </div>
+
+              </div>
+
+              <!-- Comment text -->
+              <div class="review-text text-muted mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus velit eius placeat eum
+                laboriosam incidunt odit laudantium quibusdam sapiente cupiditate est, blanditiis inventore rerum quas
+                excepturi voluptatum similique? Atque.
+              </div>
+
+            </div>
+          </div>
+          <!-- Second item -->
+
+          <!-- Third item -->
+          <div class="item">
+            <div class="review-card">
+
+              <!-- Review owner details -->
+              <div class="d-flex align-items-center">
+
+                <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Review owner picture"
+                  class="review-profile-img">
+
+                <div class="lh-1 ms-2">
+                  <div class="fw-bold">Kurt Pierce</div>
+                  <small class="text-muted">Customer</small>
+                </div>
+
+              </div>
+
+              <!-- Comment text -->
+              <div class="review-text text-muted mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus velit eius placeat eum
+                laboriosam incidunt odit laudantium quibusdam sapiente cupiditate est, blanditiis inventore rerum quas
+                excepturi voluptatum similique? Atque.
+              </div>
+
+            </div>
+          </div>
+          <!-- Third item -->
+
+          <!-- Fourth item -->
+          <div class="item">
+            <div class="review-card">
+
+              <!-- Review owner details -->
+              <div class="d-flex align-items-center">
+
+                <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Review owner picture"
+                  class="review-profile-img">
+
+                <div class="lh-1 ms-2">
+                  <div class="fw-bold">Allison Parker</div>
+                  <small class="text-muted">Customer</small>
+                </div>
+
+              </div>
+
+              <!-- Comment text -->
+              <div class="review-text text-muted mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus velit eius placeat eum
+                laboriosam incidunt odit laudantium quibusdam sapiente cupiditate est, blanditiis inventore rerum quas
+                excepturi voluptatum similique? Atque.
+              </div>
+
+            </div>
+          </div>
+          <!-- Fourth item -->
+
+        </div>
+        <!-- Owl carousel -->
+
+        <button type="button" class="btn btn-rounded btn-secondary mt-2" data-mdb-ripple-init
+          data-mdb-ripple-color="success" data-mdb-modal-init data-mdb-target="#reviewModal"><i class="fas fa-comment me-2"></i>Leave a review</button>
+
+      </div>
+      <!-- Container-->
+    </section>
+    <!-- Section: Reviews -->
+
+    <!-- Section: -->
+     <section class="mb-10">
+
+      <div class="container">
+
+        <!-- Row: First -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInLeft">
+
+          <!-- First column -->
+          <div class="col-lg-4">
+
+            <img src="img/cafe_building.jpg" alt="Pie cafe building" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
+          
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+           <div class="col-lg-8">
+
+            <div class="card rounded-7 h-100">
+              <div class="card-body">
+
+                <h3 class="h4 card-title">Please come visit your local take out spot on Vine St.</h3>
+                <p class="card-text text-muted">We open at 8am to serve you gourmet coffee drinks: Hot, iced, or frozen Brew, espresso, mocha, latte, chai and smoothies. Stop by and see for yourself. We are friendly!</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: First -->
+
+        <!-- Row: Second -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInRight">
+
+          <!-- First column -->
+          <div class="col-lg-8 order-lg-1 order-2">
+
+            <div class="card rounded-7 h-100">
+              <div class="card-body">
+
+                <h3 class="h4 card-title">We have a clean, lid dining room</h3>
+                <p class="card-text text-muted">Pie Cafe's cozy dining room offers a warm, inviting atmosphere perfect for any meal. Enjoy friendly service, fresh flavors, and a comfortable space to relax and dine.</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+          <div class="col-lg-4 order-lg-2 order-1">
+
+            <img src="img/cafe_inside.jpg" alt="Pie cafe dining room" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
+          
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: Second -->
+
+        <!-- Row: Third -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInLeft">
+
+          <!-- First column -->
+          <div class="col-lg-4">
+
+            <img src="img/pizza.png" alt="A pizza of Pie cafe" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
+          
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+           <div class="col-lg-8">
+
+            <div class="card rounded-7 h-100">
+              <div class="card-body">
+
+                <h3 class="h4 card-title">We have a very large pizza menu for your lunch, dinner, and catering needs.</h3>
+                <p class="card-text text-muted">We craft our pizzas from scratch. The dough made daily in the house. We are also the home of <b>Oven Baked Subs</b> and <b>Wings-On-The-Spectrum</b>. We serve crispy, juicy jumbo chicken wings with 12 different flavors. unbeatable prices, too! We hand bread the chicken tenders, bone-in and boneless wings, pressure deep fried for crispy outside & juicy inside deliciousness.</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: Third -->
+
+
+      </div>
+
+     </section>
+
+  </main>
+  <!-- Main content -->
+
+  <!-- Footer -->
+  <footer>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center border-top">
+      <!-- Grid container -->
+      <div class="container p-2">
+
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" 
+          href="https://www.facebook.com/piecafevinest" target="_blank" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Yelp -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #000" 
+          href="https://www.yelp.com/biz/pie-cafe-willowick" target="_blank" role="button"><i class="fab fa-yelp"></i></a>
+
+          <!-- Youtube -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ed302f" 
+          href="https://www.youtube.com/@PieCafeVineSt" target="_blank" role="button"><i class="fab fa-youtube"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" 
+          href="https://instagram.com/piecafevinest" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Tiktok -->
+          <a class="btn btn-primary btn-floating m-1" style="background-color: #ff0050" 
+          href="https://www.tiktok.com/@piecafevinest" target="_blank" role="button"><i class="fab fa-tiktok"></i></a>
+
+        </section>
+        <!-- Section: Social media -->
+
+
+
+
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://piecafe.com/">Pie Cafe</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+  <!-- Import script: Jquery -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- Import script: Owl Carousel-->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Import script: Wow -->
+  <script src="js/wow.min.js"></script>
+  <!-- Custom script -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      new WOW().init();
+      $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 20,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

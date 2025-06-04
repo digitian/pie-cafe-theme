@@ -1,0 +1,19 @@
+.review-card {
+    padding-inline: 20px;
+    transition: filter .2s ease-in-out;
+}
+
+.review-card:hover {
+    filter: brightness(130%);
+    cursor: pointer;
+}
+
+.review-profile-img {
+    width: 40px !important;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.review-text {
+    font-size: 0.9rem;
+}
