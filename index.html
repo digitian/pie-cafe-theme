@@ -27,7 +27,7 @@
 
   <!-- Modals -->
   <div class="modal top fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true"
-    data-mdb-backdrop="false" data-mdb-keyboard="true">
+    data-mdb-backdrop="true" data-mdb-keyboard="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-7">
         <div class="modal-header">
@@ -79,11 +79,25 @@
   </div>
   <!-- Modals-->
 
-  <!-- Header -->
-  <header>
+  <!-- Info Top Bar -->
+    <div class="w-100 text-bg-danger p-1 p-md-2 d-flex flex-column flex-md-row justify-content-end small info-top">
+      <!-- Email -->
+      <div class="me-3"><i class="fas fa-envelope me-2"></i><a href="mailto:info@piecafe.com" class="text-light">info@piecafe.com</a></div>
 
+      <!-- Location -->
+      <div class="me-3"><i class="fas fa-location-dot me-2"></i
+        ><a href="https://maps.app.goo.gl/h3H73A1botMfvfea9" target="_blank" class="text-light"
+        >31715 Vine St. Willowick, OH. 44095</a>
+      </div>
+
+      <!-- Phone -->
+      <div><i class="fas fa-phone me-2"></i><a href="tel:440-549-4050" class="text-light">440-549-4050</a></div>
+
+    </div>
+    <!-- Info Top Bar -->
+     
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
 
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Pie Cafe</a>
@@ -99,16 +113,16 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-            <li class="nav-item me-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
 
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Contact Us</a>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
 
-            <li class="nav-item me-2">
-              <a class="nav-link" href="#">Meet Our Team</a>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="meet-our-team.html">Meet Our Team</a>
             </li>
 
             <li class="nav-item">
@@ -124,14 +138,17 @@
     </nav>
     <!-- Navigation bar -->
 
+  <!-- Header -->
+  <header>
+
     <!-- Section: Welcome screen-->
-    <section>
+    <section class="">
 
       <div class="vh-100"
         style="background-image: url('img/pizza-bg.webp'); background-size: cover; background-position: center;">
 
         <!-- Container -->
-        <div class="container h-100 wow fadeInUp">
+        <div class="container h-100 wow fadeIn">
           <div class="row h-100 align-items-center">
 
             <div class="col-md-6 d-flex flex-column align-items-center">
@@ -161,13 +178,192 @@
   <!-- Header -->
 
   <!-- Main content -->
-  <main class="mt-5">
+  <main>
+
+    <!-- Section: Award winner -->
+    <section class="mb-10" style="margin-top: -37.5px;">
+
+      <div class="container text-center position-relative mb-8 wow fadeInUp ">
+
+        <!-- Background with clip path -->
+        <div class="bg-danger bg-opacity-75 w-100 award-bg"></div>
+        
+        <!-- Award image -->
+        <img src="img/award.png" alt="Pie cafe customer service award" class="img-fluid object-cover position-absolute translate-middle top-50 award-img">
+
+      </div>
+
+      <div class="container text-center wow fadeInUp">
+
+        <!-- Award info -->
+         <p class="text-muted"> We're thrilled to announce we are the winner of the <b>"Customer Service Award"</b> from <b>Willoughby Western Lake County Chamber of Commerce</b>.  We thank our team for their dedication and hard work. We thank the commerce for the reward. We thank our customers and friends for their continuous support and online votes! Thank you for being an amazing part of our journey!</p>
+
+         <p class="text-muted">This achievement reflects our commitment to providing exceptional experiences every time you visit.</p>
+
+      </div>
+
+    </section>
+    <!-- Section: Award winner -->
+
+    <!-- Section: Introduction cards -->
+     <section class="mb-10">
+
+      <div class="container">
+
+        <!-- Row: Article -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInRight">
+
+          <!-- First column -->
+          <div class="col-lg-8 order-lg-1 order-2">
+
+            <div class="card rounded-7 shadow-4-strong h-100">
+
+              <div class="card-body h-100 d-flex flex-column justify-content-between align-items-start">
+
+                <div>
+                  <h3 class="h4 card-title">Voyage Ohio Magazine featured Pie Cafe</h3>
+
+                <p class="card-text text-muted">Hi, I’m Rahmi Olgac — a lifelong learner, pizza maker, and small business owner passionate about serving good food and building a stronger community. I’m excited to share my story with you, and I’d like to thank Voyage Ohio Magazine for this amazing interview.</p>
+                </div>
+
+                <a class="btn btn-secondary btn-rounded" href="https://voyageohio.com/interview/exploring-life-business-with-rahmi-olgac-of-pie-cafe?fbclid=IwY2xjawIYM7xleHRuA2FlbQIxMQABHW5OFa7S8shRz2E_UA0WSNzVWrzBQEWxjam1mGWOMTePicCW8d_wvRYYfg_aem__Tqt04m1pWpEnZ3G4xXQ9g" target="_blank"><i class="fas fa-eye me-2"></i>Read the article</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+          <div class="col-lg-4 order-lg-2 order-1">
+
+            <div class="bg-image hover-overlay ripple">
+
+              <img src="img/rahmi.webp" alt="Pie cafe dining room" class="img-fluid object-cover rounded-7 shadow-4 w-100" style="height: 225px;">
+              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+            
+            </div>
+          
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: Article -->
+
+        <!-- Row: First -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInLeft">
+
+          <!-- First column -->
+          <div class="col-lg-4">
+
+            <div class="bg-image hover-overlay ripple">
+
+              <img src="img/cafe_building.jpg" alt="Pie cafe building" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
+              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+
+            </div>
+          
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+           <div class="col-lg-8">
+
+            <div class="card rounded-7 shadow-4-strong h-100">
+              <div class="card-body">
+
+                <h3 class="h4 card-title">Please come visit your local take out spot on Vine St.</h3>
+                <p class="card-text text-muted">We open at 8am to serve you gourmet coffee drinks: Hot, iced, or frozen Brew, espresso, mocha, latte, chai and smoothies. Stop by and see for yourself. We are friendly!</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: First -->
+
+        <!-- Row: Second -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInRight">
+
+          <!-- First column -->
+          <div class="col-lg-8 order-lg-1 order-2">
+
+            <div class="card rounded-7 shadow-4-strong h-100">
+              <div class="card-body">
+
+                <h3 class="h4 card-title">We have a clean, lid dining room</h3>
+                <p class="card-text text-muted">Pie Cafe's cozy dining room offers a warm, inviting atmosphere perfect for any meal. Enjoy friendly service, fresh flavors, and a comfortable space to relax and dine.</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+          <div class="col-lg-4 order-lg-2 order-1">
+
+            <div class="bg-image hover-overlay ripple">
+
+              <img src="img/cafe_inside.jpg" alt="Pie cafe dining room" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
+              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+
+            </div>
+          
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: Second -->
+
+        <!-- Row: Third -->
+        <div class="row align-items-stretch g-2 mb-5 wow fadeInLeft">
+
+          <!-- First column -->
+          <div class="col-lg-4">
+
+            <div class="bg-image hover-overlay ripple">
+
+              <img src="img/pizza.png" alt="A pizza of Pie cafe" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
+              <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+              
+            </div>
+          
+          </div>
+          <!-- First column -->
+
+          <!-- Second column -->
+           <div class="col-lg-8">
+
+            <div class="card rounded-7 shadow-4-strong h-100">
+              <div class="card-body">
+
+                <h3 class="h4 card-title">We have a very large pizza menu for your lunch, dinner, and catering needs.</h3>
+                <p class="card-text text-muted">We craft our pizzas from scratch. The dough made daily in the house. We are also the home of <b>Oven Baked Subs</b> and <b>Wings-On-The-Spectrum</b>. We serve crispy, juicy jumbo chicken wings with 12 different flavors. unbeatable prices, too! We hand bread the chicken tenders, bone-in and boneless wings, pressure deep fried for crispy outside & juicy inside deliciousness.</p>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Second column -->
+
+        </div>
+        <!-- Row: Third -->
+
+
+      </div>
+
+     </section>
+    <!-- Section: Introduction cards -->
 
     <!-- Section: Reviews -->
-    <section class="mb-10">
+    <section class="mb-10 wow fadeIn">
 
       <!-- Container-->
       <div class="container">
+
+        <h3 class="text-center mb-5">What Our Customers Say About Us?</h3>
 
         <!-- Owl carousel -->
         <div class="owl-carousel owl-theme">
@@ -287,110 +483,13 @@
         </div>
         <!-- Owl carousel -->
 
-        <button type="button" class="btn btn-rounded btn-secondary mt-2" data-mdb-ripple-init
+        <button type="button" class="btn btn-rounded btn-secondary mt-5" data-mdb-ripple-init
           data-mdb-ripple-color="success" data-mdb-modal-init data-mdb-target="#reviewModal"><i class="fas fa-comment me-2"></i>Leave a review</button>
 
       </div>
       <!-- Container-->
     </section>
     <!-- Section: Reviews -->
-
-    <!-- Section: -->
-     <section class="mb-10">
-
-      <div class="container">
-
-        <!-- Row: First -->
-        <div class="row align-items-stretch g-2 mb-5 wow fadeInLeft">
-
-          <!-- First column -->
-          <div class="col-lg-4">
-
-            <img src="img/cafe_building.jpg" alt="Pie cafe building" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
-          
-          </div>
-          <!-- First column -->
-
-          <!-- Second column -->
-           <div class="col-lg-8">
-
-            <div class="card rounded-7 h-100">
-              <div class="card-body">
-
-                <h3 class="h4 card-title">Please come visit your local take out spot on Vine St.</h3>
-                <p class="card-text text-muted">We open at 8am to serve you gourmet coffee drinks: Hot, iced, or frozen Brew, espresso, mocha, latte, chai and smoothies. Stop by and see for yourself. We are friendly!</p>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- Second column -->
-
-        </div>
-        <!-- Row: First -->
-
-        <!-- Row: Second -->
-        <div class="row align-items-stretch g-2 mb-5 wow fadeInRight">
-
-          <!-- First column -->
-          <div class="col-lg-8 order-lg-1 order-2">
-
-            <div class="card rounded-7 h-100">
-              <div class="card-body">
-
-                <h3 class="h4 card-title">We have a clean, lid dining room</h3>
-                <p class="card-text text-muted">Pie Cafe's cozy dining room offers a warm, inviting atmosphere perfect for any meal. Enjoy friendly service, fresh flavors, and a comfortable space to relax and dine.</p>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- First column -->
-
-          <!-- Second column -->
-          <div class="col-lg-4 order-lg-2 order-1">
-
-            <img src="img/cafe_inside.jpg" alt="Pie cafe dining room" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
-          
-          </div>
-          <!-- Second column -->
-
-        </div>
-        <!-- Row: Second -->
-
-        <!-- Row: Third -->
-        <div class="row align-items-stretch g-2 mb-5 wow fadeInLeft">
-
-          <!-- First column -->
-          <div class="col-lg-4">
-
-            <img src="img/pizza.png" alt="A pizza of Pie cafe" class="img-fluid rounded-7 shadow-4 w-100 object-cover" style="height: 225px;">
-          
-          </div>
-          <!-- First column -->
-
-          <!-- Second column -->
-           <div class="col-lg-8">
-
-            <div class="card rounded-7 h-100">
-              <div class="card-body">
-
-                <h3 class="h4 card-title">We have a very large pizza menu for your lunch, dinner, and catering needs.</h3>
-                <p class="card-text text-muted">We craft our pizzas from scratch. The dough made daily in the house. We are also the home of <b>Oven Baked Subs</b> and <b>Wings-On-The-Spectrum</b>. We serve crispy, juicy jumbo chicken wings with 12 different flavors. unbeatable prices, too! We hand bread the chicken tenders, bone-in and boneless wings, pressure deep fried for crispy outside & juicy inside deliciousness.</p>
-
-              </div>
-            </div>
-
-          </div>
-          <!-- Second column -->
-
-        </div>
-        <!-- Row: Third -->
-
-
-      </div>
-
-     </section>
 
   </main>
   <!-- Main content -->

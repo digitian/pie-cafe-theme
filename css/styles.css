@@ -1,3 +1,11 @@
+.info-top a {
+    transition: color .1s ease-in-out;
+}
+
+.info-top a:hover {
+    color: #E0E0E0 !important;
+}
+
 .review-card {
     padding-inline: 20px;
     transition: filter .2s ease-in-out;
@@ -16,4 +24,32 @@
 
 .review-text {
     font-size: 0.9rem;
+}
+
+.award-bg {
+    height: 75px;
+    clip-path: polygon(100% 100%, 95% 50%, 100% 0%, 0% 0%, 5% 50%, 0% 100%);
+}
+
+.award-img {
+    width: 200px;
+    height: 200px;
+}
+
+.mask {
+    cursor: pointer;
+}
+
+.contact-icon {
+    width: 30px;
+}
+
+.job-offer-bg {
+    height: 250px;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
 }
