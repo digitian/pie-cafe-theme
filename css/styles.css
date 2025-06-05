@@ -6,6 +6,16 @@
     color: #E0E0E0 !important;
 }
 
+.header-badges span {
+    transition: transform .2s ease-in-out;
+    user-select: none;
+}
+
+.header-badges span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .review-card {
     padding-inline: 20px;
     transition: filter .2s ease-in-out;
@@ -42,6 +52,22 @@
 
 .contact-icon {
     width: 30px;
+}
+
+.contact-link .fa-link {
+    transition: opacity .2s ease-in-out;
+}
+
+.contact-link:hover .fa-link {
+    opacity: 1 !important;
+}
+
+.contact-link:hover {
+    opacity: 0.9;
+}
+
+.contact-link {
+    transition: opacity .2s ease-in-out;
 }
 
 .job-offer-bg {
